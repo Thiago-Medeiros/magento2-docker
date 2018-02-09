@@ -1,0 +1,16 @@
+### APP ################################################################################################################
+APP_DIR=/home/thiago-medeiros/projects/thiago/git/magento2-phpfpm-nginx
+
+### Magento Version Options: any release on https://github.com/magento/magento2/releases
+MAGENTO_VERSION=2.1.11
+
+### DATABASE ###########################################################################################################
+MYSQL_DATABASE=default
+MYSQL_ROOT_PASSWORD=root
+
+### PHP ################################################################################################################
+PHP_UPSTREAM_CONTAINER=php-fpm
+PHP_UPSTREAM_PORT=9000
+
+### PHP Version - Options: 71, 70 or 56
+PHP_VERSION=70
