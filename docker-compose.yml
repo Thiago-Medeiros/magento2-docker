@@ -24,11 +24,13 @@ services:
       - ./www:/var/www
     expose:
       - ${PHP_UPSTREAM_PORT}
+    depends_on:
+      - database
 
-  mariadb:
-    image: mariadb:10
+  database:
+    image: mysql:5
     volumes:
-      - ${APP_DIR}/docker/temp/mariadb:/var/lib/mysql
+      - ${APP_DIR}/docker/temp/database:/var/lib/mysql
     ports:
       - ${MYSQL_PORT}:3306
     environment:
