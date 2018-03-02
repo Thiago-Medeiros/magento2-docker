@@ -1,4 +1,4 @@
 .env
 /.idea
-/www/
 !/www/.gitkeep
+/www
