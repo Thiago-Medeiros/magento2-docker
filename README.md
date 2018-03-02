@@ -17,10 +17,17 @@ docker-compose up -d
 
 ##### On first run do
 ```
-docker exec magento2docker_php-fpm_1 bash -c '/tmp/download.sh'
-docker exec magento2docker_php-fpm_1 bash -c '/tmp/composer.sh'
 docker exec magento2docker_php-fpm_1 bash -c '/tmp/install.sh'
 ```
+
+##### URL and Users
+backend: <DOCKER_IP>/admin
+
+frontend: <DOCKER_IP>
+
+admin user: admin
+
+admin pass: admin123
 
 if you receive a message like: ` Error: No such container ` run
 
@@ -35,3 +42,9 @@ docker ps
 ```
 
 and replace magento2docker_php-fpm_1 with "NAME" that contain php-fpm
+
+##### Running commands inside image
+
+```
+docker exec magento2docker_php-fpm_1 bash -c 'COMMAND'
+```
