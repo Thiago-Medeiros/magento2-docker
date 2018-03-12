@@ -6,13 +6,14 @@
 ```
 clone this repo
 cd <dir>
-rename env-example to .env
-update at least APP_DIR
+cp env-example .env
 ```
 
+update at least APP_DIR
+
+##### Running
 ```
-docker-compose build
-docker-compose up -d
+docker-compose up --build -d
 ```
 
 ##### On first run do
