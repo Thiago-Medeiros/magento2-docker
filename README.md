@@ -2,7 +2,7 @@
  - docker 1.12
  - docker-compose 1.18
 
-#### Install
+#### Installing
 ```
 clone this repo
 cd <dir>
@@ -16,7 +16,7 @@ update at least APP_DIR
 docker-compose up --build -d
 ```
 
-##### On first run do
+###### On first run
 ```
 docker exec magento2docker_php-fpm_1 bash -c '/tmp/install.sh'
 ```
