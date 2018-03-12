@@ -11,14 +11,15 @@ cp env-example .env
 
 update at least APP_DIR
 
-##### Running
-```
-docker-compose up --build -d
-```
-
 ###### On first run
 ```
 docker exec magento2docker_php-fpm_1 bash -c '/tmp/install.sh'
+docker-compose up --build -d
+```
+
+##### Running
+```
+docker-compose up --build -d
 ```
 
 if you receive a message like: ` Error: No such container ` run
