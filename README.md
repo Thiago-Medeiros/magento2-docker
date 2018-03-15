@@ -6,7 +6,7 @@
 ```
 clone this repo
 cd <dir>
-cp env-example .env
+cp env-sample .env
 ```
 
 update APP_DIR value in .env file
@@ -19,7 +19,11 @@ ex: APP_DIR=<YOUR_DIRECTORY> into APP_DIR=/my/project/directory
 docker-compose up --build -d
 ```
 
-before the next step make sure the mysql image is `ready for connections`, you can check this doing `docker logs magento2phpfpmnginx_mariadb_1`
+before the next step make sure the mysql image is `ready for connections`, you can check this doing:
+
+```
+docker logs magento2phpfpmnginx_mariadb_1
+```
 
 ```
 docker exec magento2docker_php-fpm_1 bash -c '/tmp/install.sh'
