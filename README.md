@@ -24,6 +24,7 @@ before the next step make sure the mysql image is `ready for connections`, you c
 ```
 docker logs magento2phpfpmnginx_mariadb_1
 ```
+after BD is running:
 
 ```
 docker exec magento2docker_php-fpm_1 bash -c '/tmp/install.sh'
