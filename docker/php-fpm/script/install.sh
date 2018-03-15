@@ -19,3 +19,19 @@ php bin/magento setup:install --base-url=http://localhost/ \
 wait
 
 php bin/magento deploy:mode:set developer
+
+wait
+
+composer require pagseguro/magento2
+
+wait
+
+php bin/magento setup:upgrade
+
+wait
+
+php bin/magento indexer:reindex
+
+wait
+
+php bin/magento cache:clean
