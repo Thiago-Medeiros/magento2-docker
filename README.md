@@ -22,7 +22,7 @@ docker-compose up --build -d
 before the next step make sure the mysql image is `ready for connections`, you can check this doing:
 
 ```
-docker logs magento2phpfpmnginx_mariadb_1
+docker logs magento2docker_database_1
 ```
 after BD is running:
 
@@ -36,9 +36,9 @@ if you receive a message like ` Error: No such container ` run
 docker ps
 
 ... NAMES
-... magento2phpfpmnginx_nginx_1
-... magento2phpfpmnginx_php-fpm_1
-... magento2phpfpmnginx_mariadb_1
+... magento2docker_nginx_1
+... magento2docker_php-fpm_1
+... magento2docker_database_1
 
 ```
 
