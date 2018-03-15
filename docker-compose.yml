@@ -17,7 +17,7 @@ services:
   php-fpm:
     build:
       context: docker/php-fpm
-      dockerfile: "Dockerfile-${PHP_VERSION}"
+      dockerfile: Dockerfile-${PHP_VERSION}
       args:
         - MAGENTO_VERSION=${MAGENTO_VERSION}
     volumes:
